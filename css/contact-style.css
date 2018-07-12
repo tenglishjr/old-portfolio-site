@@ -61,15 +61,6 @@
     transition:.25s;
 }
 
-.parallax-bg {
-    background-image: url("http://via.placeholder.com/992x500");
-    height: 500px;
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
 #navbar-hamburger {
     border: none;
 }
@@ -77,7 +68,6 @@
 #navbar-hamburger i {
     color: var(--main-gray);
 }
-
 
 #last-name {
     margin-top: .14em;
@@ -91,7 +81,7 @@
     .navbar-brand-centered {
         margin-left: -80px;
     }
-    
+
     .logo-wo-words {
         width: 60px;
     }
@@ -99,5 +89,5 @@
     .logo-name {
         display: none;
     }
-    
+
 }
