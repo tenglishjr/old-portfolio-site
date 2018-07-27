@@ -147,11 +147,11 @@ a.nav-link.link-style i {
 }
 
 .section-title i {
-    color: var(--accent-green);
+    color: var(--main-blue);
 }
 
 .section-title i.active {
-    animation: bounceX 2s ease-in-out;
+    animation: bounceX 3s infinite;
 }
 
 
