@@ -55,8 +55,6 @@ a.nav-link.link-style div {
     letter-spacing: 2.25px;
 }
 
-a.nav-link.link-style li
-
 a.nav-link.link-style i {
     text-align: center;
     width: 100%;
@@ -134,7 +132,8 @@ a.nav-link.link-style i {
     font-size: 36px;
 }
 
-@keyframes bounceX {
+/*For section arrows pointing to the left:*/
+@keyframes bounceXleft {
     0%, 20%, 50%, 80%, 100% {
         transform: translateX(0);
     }
@@ -146,14 +145,58 @@ a.nav-link.link-style i {
     }
 }
 
-.section-title i {
-    color: var(--main-blue);
+/*For section arrows pointing to the right*/
+@keyframes bounceXright {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-8px);
+    }
+    60% {
+        transform: translateX(-3px);
+    }
 }
 
-.section-title i.active {
-    animation: bounceX 3s infinite;
+.section-title .fa-angle-double-left {
+    color: var(--accent-green);
+    animation: bounceXleft 3s infinite;
+}
+.section-title .fa-angle-double-right {
+    color: var(--accent-green);
+    animation: bounceXright 3s infinite;
 }
 
+
+
+.brackets-around-head {
+    color: var(--white);
+    font-size: 122px;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.about-body {
+    color: var(--white);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.welcome {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+/*=====PROJECTS*/
+
+.section-title .projects-title {
+    color: var(--main-gray);
+    font-family: 'Open Sans', Helvetica, sans-serif;
+    font-weight: 300;
+    font-size: 36px;
+}
 
 /*=-=-=-=-=-=-=-= NAVBAR IDs -=-=-=-=-=-=-=-=*/
 
@@ -192,8 +235,29 @@ section#about-section.mt-5 {
 }
 
 #about-section {
-    height: 100vh;
+    height: 150vh;
     background: var(--main-gray);
+}
+
+#headshot {
+    width: auto;
+    height: 195px;
+    border: 2px solid var(--white);
+    border-radius: 95%;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+/*=-=-=-=-=-=-=-PROJECTS SECTION =-=-=-=-=-=-*/
+
+#scroll-projects {
+    background: var(--main-gray);
+    height: 55px;
+}
+
+#projects-section {
+    height: 120vh;
 }
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

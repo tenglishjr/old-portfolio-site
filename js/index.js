@@ -41,11 +41,5 @@ $(document).ready( () => {
             }
         });
 
-    // Dancing Section Arrows, on page Navigation
-    $('#info-link').click(() => {
-        setTimeout(() => {
-            $('.fas.fa-angle-double-left.fa-md').addClass('active');
-        }, 500);
-        $('.fas.fa-angle-double-left.fa-md').removeClass('active');
-    })
+
 });
