@@ -2,8 +2,7 @@ $(document).ready( () => {
     'use strict';
 
     setTimeout(() => {
-        $('#name-header').fadeIn();
-        $('#job-title').fadeIn();
+        $('#top-section').addClass('load');
     }, 500);
 
     $(window).scroll(function(){

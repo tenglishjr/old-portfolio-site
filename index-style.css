@@ -10,12 +10,6 @@ body, html {
     height: 100%;
 }
 
-.container-fluid {
-    padding: 0;
-}
-
-/*=-=-=-=-=-=-=-=-=- NAVBAR CLASSES =-=-=-=-=-=-=-=-=-=-=*/
-
 aside {
     background-color: var(--main-gray);
     height: 75px;
@@ -26,13 +20,19 @@ img.logo-wo-words.mx-0 {
     height: auto;
 }
 
-.navbar-light .navbar-nav .nav-item .nav-link .active-link {
+.container-fluid {
+    padding: 0;
+}
+
+/*=-=-=-=-=-=-=-=-=- NAVBAR CLASSES =-=-=-=-=-=-=-=-=-=-=*/
+
+
+.nav-link.link-style.active-link {
     color: var(--main-blue);
 }
 
 a.nav-link {
     -o-transition:.5s;
-    -ms-transition:.5s;
     -moz-transition:.5s;
     -webkit-transition:.5s;
     transition:.25s;
@@ -73,7 +73,8 @@ a.nav-link.link-style i {
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
 
-/*=-=-=-=-=-=-=- HERO SECTION =-=-=-=-=-=-=-=*/
+/*=-=-=-=-=-=-=- MAIN CONTENT =-=-=-=-=-=-=-=*/
+
 .parallax-bg {
     /*BG IMG*/
     background-image: url("./img/black-and-white-black-and-white-fence-804507.jpg");
@@ -86,7 +87,6 @@ a.nav-link.link-style i {
 
 .parallax-bg .name-header,
 .parallax-bg .job-title {
-    display: none;
     color: var(--white);
     font-family: 'Open Sans', sans-serif;
 }
@@ -129,7 +129,7 @@ a.nav-link.link-style i {
 }
 
 .down-arrow-icon {
-    color: var(--main-gray);
+    color: var(--white);
     animation: bounce 2s infinite;
 }
 
@@ -146,6 +146,33 @@ a.nav-link.link-style i {
 #last-name {
     width: 65px;
     margin-top: .2em;
+}
+
+#dl-resume {
+    display: none;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+/*TOP SECTION*/
+#top-section {
+    opacity: 0;
+    height: 40%;
+    -webkit-transition: opacity 2.5s ease-in;
+    -moz-transition: opacity 2.5s ease-in;
+    -o-transition: opacity 2.5s ease-in;
+    transition: opacity 2.5s ease-in;
+}
+
+#top-section.load {
+    opacity: 1;
+}
+
+/*=-=-=-=-=-=-=-=-ABOUT SECTION=-=-=-=-=-=-=-*/
+
+#about-section {
+    background: var(--white);
+    height: 40%;
 }
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/

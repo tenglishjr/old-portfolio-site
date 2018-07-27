@@ -31,8 +31,8 @@
     <body>
 
         <div class="container-fluid h-100">
-
-            <div class="row h-100 parallax-bg">
+            <span id="top"></span>
+            <div class="row h-100">
             <!--NAVBAR-->
                 <!--<aside class="col-12 col-md-2 p-0 bg-transparent">-->
                     <!--<div class="navbar navbar-expand-sm navbar-light py-3">-->
@@ -91,20 +91,20 @@
                                         </li>
                                         <li class="d-flex align-items-center">
                                             <ul class="flex-sm-column flex-row navbar-nav justify-content-between navlinks">
-                                                <li class="nav-item my-4 mx-1">
+                                                <li class="nav-item my-4 mx-2">
                                                     <a class="nav-link link-style" href="./index.html"><i class="fas fa-chevron-up fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">TOP</div></a>
                                                 </li>
-                                                <li class="nav-item my-4 mx-1">
-                                                    <a class="nav-link link-style" href="#"><i class="fas fa-info fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">ABOUT</div></a>
+                                                <li class="nav-item my-4 mx-2">
+                                                    <a class="nav-link link-style" href="#about-section"><i class="fas fa-info fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">ABOUT</div></a>
                                                 </li>
-                                                <li class="nav-item my-4 mx-1">
+                                                <li class="nav-item my-4 mx-2">
                                                     <a class="nav-link link-style" href="#"><i class="fas fa-code fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">WORK</div></a>
                                                 </li>
-                                                <li class="nav-item my-4 mx-1">
+                                                <li class="nav-item my-4 mx-2">
                                                     <a class="nav-link link-style" href="#"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
                                                 </li>
-                                                <li class="nav-item my-4 mx-1">
-                                                    <a class="nav-link link-style" href="#"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">Download Resume</div></a>
+                                                <li class="nav-item my-4 mx-2">
+                                                    <a class="nav-link link-style" href="#"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline" id="dl-resume">Download Resume</div></a>
                                                 </li>
                                             </ul>
                                         </li>
@@ -112,13 +112,19 @@
                                 </div>
                             </nav>
                         </aside>
-                        <main class="col py-3 px-0">
-                            <div class="name-header text-center" id="name-header">Timothy English</div>
-                            <div class="job-title text-center" id="job-title">
-                                <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
-                                SOFTWARE DEVELOPER
-                            </div>
-                            <div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>
+                        <main class="parallax-bg col py-3 px-0" id="main-content">
+                            <section id="top-section">
+                                <div class="name-header text-center" id="name-header">Timothy English</div>
+                                <div class="job-title text-center" id="job-title">
+                                    <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
+                                    <span>SOFTWARE DEVELOPER</span>
+                                </div>
+                                <div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>
+                            </section>
+
+                            <section class="mt-5" id="about-section">
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto asperiores autem cupiditate dicta dolorem, ea eius enim, explicabo impedit itaque maxime modi, necessitatibus nemo quo sit veritatis vero voluptatum.
+                            </section>
                         </main>
 
             </div>
