@@ -30,104 +30,63 @@
 
     <body>
 
-        <div class="container-fluid h-100">
-            <span id="top"></span>
-            <div class="row h-100">
+        <div class="container-fluid">
+            <div id="top"></div>
             <!--NAVBAR-->
-                <!--<aside class="col-12 col-md-2 p-0 bg-transparent">-->
-                    <!--<div class="navbar navbar-expand-sm navbar-light py-3">-->
-                        <!--<a class="navbar-brand navbar-brand" id="navbar-logo" href="./index.html">-->
-                            <!--<span class="logo-name">Timothy</span>-->
-                            <!--<img src="img/Logo%20NEW.png" class="logo-wo-words mx-0">-->
-                            <!--<span class="logo-name" id="last-name">English</span>-->
-                        <!--</a>-->
-                        <!--<button class="navbar-toggler" id="navbar-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
-                            <!--<i class="fas fa-bars fa-lg"></i>-->
-                        <!--</button>-->
-                        <!--<div class="collapse navbar-collapse" id="navbarNav">-->
-                            <!--<ul class="navbar-nav ml-auto">-->
-                                <!--<li class="nav-item ml-0">-->
-                                    <!--<a class="nav-link link-style active-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>-->
-                                <!--</li>-->
-                                <!--<li class="nav-item">-->
-                                    <!--<a class="nav-link link-style" href="#">WORK</a>-->
-                                <!--</li>-->
-                                <!--<li class="nav-item">-->
-                                    <!--<a class="nav-link link-style" href="#">ABOUT</a>-->
-                                <!--</li>-->
-                                <!--<li class="nav-item">-->
-                                    <!--<a class="nav-link link-style" href="#">CONTACT</a>-->
-                                <!--</li>-->
-                            <!--</ul>-->
-                        <!--</div>-->
-                    <!--</div>-->
 
-                    <!--<div class="name-header text-center" id="name-header">Timothy English</div>-->
-                    <!--<div class="job-title text-center" id="job-title">-->
-                        <!--<span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>-->
-                        <!--SOFTWARE DEVELOPER-->
-                    <!--</div>-->
-                    <!--<div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>-->
-
-                <!--</aside>-->
+            <nav class="navbar navbar-expand navbar-light fixed-top py-3">
+                <a class="navbar-brand navbar-brand" id="navbar-logo" href="./index.html">
+                    <img src="img/Logo%20NEW.png" class="logo-wo-words mx-0">
+                </a>
+                <button class="navbar-toggler" id="navbar-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-bars fa-lg"></i>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="#top"><i class="fas fa-chevron-up fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">TOP</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" id="info-link" href="#scroll-about"><i class="fas fa-info fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">ABOUT</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="#"><i class="fas fa-code fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">WORK</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="#"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="#"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline" id="dl-resume">Download Resume</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
 
 
-                <!--<main class="col summary-div parallax-bg">-->
-                    <!--<div class="col-12">-->
+            <main class="col py-3 px-0 main-wrapper" id="main-content">
+                <section class="smooth-transition" id="top-section">
+                    <div class="name-header text-center" id="name-header">Timothy English</div>
+                    <div class="job-title text-center pl-5" id="job-title">
+                        <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
+                        <span>SOFTWARE DEVELOPER</span>
+                    </div>
+                    <div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>
+                </section>
 
-                    <!--</div>-->
-                <!--</main>-->
+                <section id="scroll-about"></section>
 
-                <!--******* FIX SPACING ISSUE 7/26 *********-->
+                <section class="mt-5 smooth-transition" id="about-section">
 
-                        <aside class="col-12 col-sm-3 p-0" id="aside">
-                            <nav class="navbar navbar-expand flex-sm-column flex-row align-items-start py-2 px-0">
-                                <div class="collapse navbar-collapse" id="navbarNav">
-                                    <ul class="flex-sm-column flex-row navbar-nav justify-content-between mx-auto">
-                                        <li class="nav-item mb-sm-5 mt-2 mt-md-4 justify-content-center">
-                                            <a class="nav-link pl-0 text-nowrap text-center mx-auto my-sm-3" id="navbar-logo" href="./index.html">
-                                                <img src="img/Logo%20NEW.png" class="logo-wo-words mx-0">
-                                            </a>
-                                        </li>
-                                        <li class="d-flex align-items-center">
-                                            <ul class="flex-sm-column flex-row navbar-nav justify-content-between navlinks">
-                                                <li class="nav-item my-4 mx-2">
-                                                    <a class="nav-link link-style" href="./index.html"><i class="fas fa-chevron-up fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">TOP</div></a>
-                                                </li>
-                                                <li class="nav-item my-4 mx-2">
-                                                    <a class="nav-link link-style" href="#about-section"><i class="fas fa-info fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">ABOUT</div></a>
-                                                </li>
-                                                <li class="nav-item my-4 mx-2">
-                                                    <a class="nav-link link-style" href="#"><i class="fas fa-code fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">WORK</div></a>
-                                                </li>
-                                                <li class="nav-item my-4 mx-2">
-                                                    <a class="nav-link link-style" href="#"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
-                                                </li>
-                                                <li class="nav-item my-4 mx-2">
-                                                    <a class="nav-link link-style" href="#"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline" id="dl-resume">Download Resume</div></a>
-                                                </li>
-                                            </ul>
-                                        </li>
-                                    </ul>
-                                </div>
-                            </nav>
-                        </aside>
-                        <main class="parallax-bg col py-3 px-0" id="main-content">
-                            <section id="top-section">
-                                <div class="name-header text-center" id="name-header">Timothy English</div>
-                                <div class="job-title text-center" id="job-title">
-                                    <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
-                                    <span>SOFTWARE DEVELOPER</span>
-                                </div>
-                                <div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>
-                            </section>
+                    <div class="section-title text-center">
+                        <span class="about-title">About Me <i class="fas fa-angle-double-left fa-md"></i></span>
+                    </div>
+                    <div class="about content">
 
-                            <section class="mt-5" id="about-section">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias architecto asperiores autem cupiditate dicta dolorem, ea eius enim, explicabo impedit itaque maxime modi, necessitatibus nemo quo sit veritatis vero voluptatum.
-                            </section>
-                        </main>
+                    </div>
 
-            </div>
+                </section>
+            </main>
+
         </div>
 
         <!--===== JS =====-->
