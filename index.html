@@ -7,59 +7,122 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>TE | Home</title>
+        <title>Timothy English | Software Developer</title>
 
         <!--===== STYLE =====-->
 
+        <link rel="icon" type="image/png" href="./favicon.png">
+
         <!--FontAwesome-->
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto+Mono:400,500|Open+Sans:300,400|Ubuntu:300,400" rel="stylesheet">
 
         <!--Bootstrap-->
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
 
         <!--Custom CSS-->
-        <link rel="stylesheet" href="css/index-style.css">
+        <link rel="stylesheet" href="index-style.css">
     </head>
+
 
 
     <body>
 
-        <main class="container-fluid">
+        <div class="container-fluid h-100">
 
+            <div class="row h-100 parallax-bg">
             <!--NAVBAR-->
-            <nav class="navbar navbar-expand-md navbar-light py-3">
-                <a class="navbar-brand navbar-brand" id="navbar-logo" href="./index.html">
-                    <img src="img/timothy-01.png" alt="Timothy" class="logo-name">
-                    <img src="img/cropped%20logo-01.png" class="logo-wo-words mx-2" alt="">
-                    <img src="img/English-01.png" alt="English" class="logo-name" id="last-name">
-                </a>
-                <button class="navbar-toggler" id="navbar-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <i class="fas fa-bars fa-lg"></i>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                    <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="./index.html">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./work.html">Work</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="./about.html">About</a>
-                        </li>
-                        <li class="nav-item mr-4">
-                            <a class="nav-link" href="./contact.html">Contact</a>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
+                <!--<aside class="col-12 col-md-2 p-0 bg-transparent">-->
+                    <!--<div class="navbar navbar-expand-sm navbar-light py-3">-->
+                        <!--<a class="navbar-brand navbar-brand" id="navbar-logo" href="./index.html">-->
+                            <!--<span class="logo-name">Timothy</span>-->
+                            <!--<img src="img/Logo%20NEW.png" class="logo-wo-words mx-0">-->
+                            <!--<span class="logo-name" id="last-name">English</span>-->
+                        <!--</a>-->
+                        <!--<button class="navbar-toggler" id="navbar-hamburger" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">-->
+                            <!--<i class="fas fa-bars fa-lg"></i>-->
+                        <!--</button>-->
+                        <!--<div class="collapse navbar-collapse" id="navbarNav">-->
+                            <!--<ul class="navbar-nav ml-auto">-->
+                                <!--<li class="nav-item ml-0">-->
+                                    <!--<a class="nav-link link-style active-link" href="./index.html">HOME <span class="sr-only">(current)</span></a>-->
+                                <!--</li>-->
+                                <!--<li class="nav-item">-->
+                                    <!--<a class="nav-link link-style" href="#">WORK</a>-->
+                                <!--</li>-->
+                                <!--<li class="nav-item">-->
+                                    <!--<a class="nav-link link-style" href="#">ABOUT</a>-->
+                                <!--</li>-->
+                                <!--<li class="nav-item">-->
+                                    <!--<a class="nav-link link-style" href="#">CONTACT</a>-->
+                                <!--</li>-->
+                            <!--</ul>-->
+                        <!--</div>-->
+                    <!--</div>-->
 
-            <div class="parallax-bg"></div>
+                    <!--<div class="name-header text-center" id="name-header">Timothy English</div>-->
+                    <!--<div class="job-title text-center" id="job-title">-->
+                        <!--<span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>-->
+                        <!--SOFTWARE DEVELOPER-->
+                    <!--</div>-->
+                    <!--<div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>-->
+
+                <!--</aside>-->
 
 
+                <!--<main class="col summary-div parallax-bg">-->
+                    <!--<div class="col-12">-->
 
+                    <!--</div>-->
+                <!--</main>-->
 
-        </main>
+                <!--******* FIX SPACING ISSUE 7/26 *********-->
+
+                        <aside class="col-12 col-sm-3 p-0" id="aside">
+                            <nav class="navbar navbar-expand flex-sm-column flex-row align-items-start py-2 px-0">
+                                <div class="collapse navbar-collapse" id="navbarNav">
+                                    <ul class="flex-sm-column flex-row navbar-nav justify-content-between mx-auto">
+                                        <li class="nav-item mb-sm-5 mt-2 mt-md-4 justify-content-center">
+                                            <a class="nav-link pl-0 text-nowrap text-center mx-auto my-sm-3" id="navbar-logo" href="./index.html">
+                                                <img src="img/Logo%20NEW.png" class="logo-wo-words mx-0">
+                                            </a>
+                                        </li>
+                                        <li class="d-flex align-items-center">
+                                            <ul class="flex-sm-column flex-row navbar-nav justify-content-between navlinks">
+                                                <li class="nav-item my-4 mx-1">
+                                                    <a class="nav-link link-style" href="./index.html"><i class="fas fa-chevron-up fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">TOP</div></a>
+                                                </li>
+                                                <li class="nav-item my-4 mx-1">
+                                                    <a class="nav-link link-style" href="#"><i class="fas fa-info fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">ABOUT</div></a>
+                                                </li>
+                                                <li class="nav-item my-4 mx-1">
+                                                    <a class="nav-link link-style" href="#"><i class="fas fa-code fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">WORK</div></a>
+                                                </li>
+                                                <li class="nav-item my-4 mx-1">
+                                                    <a class="nav-link link-style" href="#"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
+                                                </li>
+                                                <li class="nav-item my-4 mx-1">
+                                                    <a class="nav-link link-style" href="#"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">Download Resume</div></a>
+                                                </li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </nav>
+                        </aside>
+                        <main class="col py-3 px-0">
+                            <div class="name-header text-center" id="name-header">Timothy English</div>
+                            <div class="job-title text-center" id="job-title">
+                                <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
+                                SOFTWARE DEVELOPER
+                            </div>
+                            <div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>
+                        </main>
+
+            </div>
+        </div>
 
         <!--===== JS =====-->
 
@@ -69,6 +132,6 @@
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
 
         <!--Custom JS-->
-        <script src="js/index.js"></script>
+        <script src="./js/index.js"></script>
     </body>
 </html>

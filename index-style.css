@@ -1,0 +1,197 @@
+:root {
+    --main-blue: #77BDD9;
+    --main-gray: #292929;
+    --accent-green: rgba(163,190,0,0.62);
+    --white: #F8F9FA;
+    --light-gray: #959595
+}
+
+body, html {
+    height: 100%;
+}
+
+.container-fluid {
+    padding: 0;
+}
+
+/*=-=-=-=-=-=-=-=-=- NAVBAR CLASSES =-=-=-=-=-=-=-=-=-=-=*/
+
+aside {
+    background-color: var(--main-gray);
+    height: 75px;
+}
+
+img.logo-wo-words.mx-0 {
+    width: 60px;
+    height: auto;
+}
+
+.navbar-light .navbar-nav .nav-item .nav-link .active-link {
+    color: var(--main-blue);
+}
+
+a.nav-link {
+    -o-transition:.5s;
+    -ms-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.25s;
+    padding: 0 1rem;
+}
+
+a.nav-link.link-style {
+    text-align: center;
+}
+
+a.nav-link.link-style div {
+    /*NavBar Links Styling*/
+    color: var(--white);
+    font-weight: 300;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2.25px;
+    margin: 0 1em;
+    width: 75%;
+    clear: left;
+    text-align: center;
+}
+
+a.nav-link.link-style i {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+a.nav-link.link-style i {
+    color: var(--white);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--light-gray);
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+/*=-=-=-=-=-=-=- HERO SECTION =-=-=-=-=-=-=-=*/
+.parallax-bg {
+    /*BG IMG*/
+    background-image: url("./img/black-and-white-black-and-white-fence-804507.jpg");
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 250vh;
+}
+
+.parallax-bg .name-header,
+.parallax-bg .job-title {
+    display: none;
+    color: var(--white);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.parallax-bg .name-header {
+    font-weight: 300;
+    letter-spacing: 1.75px;
+    font-size: 42px;
+    margin: 5em 0 .3em;
+}
+
+.parallax-bg .job-title {
+    font-size: 12px;
+    letter-spacing: 2.25px;
+    margin-left: 17px;
+}
+
+.parallax-bg .job-title .fas {
+    color: var(--main-blue);
+}
+
+.down-arrow-div {
+    text-align: center;
+    margin-top: 16.5em;
+}
+
+
+/*JS for Bouncing Arrow found on CodePen - https://codepen.io/bewley/pen/revRQv*/
+
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.down-arrow-icon {
+    color: var(--main-gray);
+    animation: bounce 2s infinite;
+}
+
+
+/*=-=-=-=-=-=-=-= NAVBAR IDs -=-=-=-=-=-=-=-=*/
+#navbar-hamburger {
+    border: none;
+}
+
+#navbar-hamburger i {
+    color: var(--white);
+}
+
+#last-name {
+    width: 65px;
+    margin-top: .2em;
+}
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+
+/*========== MEDIA QUERIES ===========*/
+
+
+/*Small devices/Landscape phones*/
+@media screen and (min-width: 576px) {
+
+    aside {
+         height: 100%;
+    }
+
+    img.logo-wo-words.mx-0 {
+        width: 120px;
+    }
+
+}
+
+/*Tablets, etc*/
+@media screen and (min-width: 768px) {
+
+    ul.flex-sm-column.flex-row.navbar-nav.justify-content-between.navlinks {
+        margin-top: 2em;
+    }
+
+    img.logo-wo-words.mx-0 {
+        width: 120px;
+    }
+
+    .logo-name {
+        display: inline-block;
+    }
+
+}
+
+
+/*Desktop computers, larger devices*/
+@media screen and (min-width: 992px) {
+
+}
+
+
+/*Large Desktops, extra large devices*/
+@media screen and (min-width: 1200px) {
+
+}
