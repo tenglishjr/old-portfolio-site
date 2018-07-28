@@ -9,9 +9,9 @@
 
 html {
     background-image: url('./img/Geometricbackground.png');
+    -webkit-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
-    height: 100vh;
 }
 
 body, html {
