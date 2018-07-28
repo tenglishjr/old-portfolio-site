@@ -13,9 +13,7 @@ html {
     background-attachment: fixed;
 }
 
-body::before {
 body:before {
-    content: "";
     display: block;
     position: fixed;
     left: 0;
@@ -26,7 +24,7 @@ body:before {
     background: url('./img/Geometricbackground.png') no-repeat center center;
     background-size: cover;
 }
-}
+
 
 body, html {
     font-family: 'Open Sans', Helvetica, sans-serif;
