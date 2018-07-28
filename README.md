@@ -13,18 +13,18 @@ Still TODO:
     - [ ] Summary
     - [ ] Style Polishing
 - [ ] **```Projects``` section**
-    - [ ] Initial creation & styling
+    - [x] Initial creation & styling
     - [ ] Cards per project:
         - [ ] Capstone 
-        - [ ] Simple Simon
-        - [ ] LSC Website (WP)
-    - [ ] Style Polishing
-- [ ] **```Contact Me``` section**
-    - [ ] Initial creation & styling
-    - [ ] Form
-    - [ ] Backend Functionality
+        - [x] Simple Simon
+        - [x] Google Weather API
     - [ ] Style Polishing
 - [ ] **Small ```Resume``` Section**
-    - [ ] Initial Creation $ styling
+    - [x] Initial Creation $ styling
     - [ ] Link *PDF* resume to button/link
+    - [ ] Style Polishing
+- [ ] **```Contact Me``` section**
+    - [x] Initial creation & styling
+    - [ ] Form
+    - [ ] Backend Functionality
     - [ ] Style Polishing
