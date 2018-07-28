@@ -8,11 +8,12 @@
 }
 
 body {
-    background: #ffffff url('./img/Geometricbackground-2.png') no-repeat center center fixed;
+    background-image: url('./img/Geometricbackground-2.png');
     -webkit-background-size: cover;
     -o-background-size: cover;
     -moz-background-size: cover;
     background-size: cover;
+    background-attachment: fixed;
 }
 
 body, html {
