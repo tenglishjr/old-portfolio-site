@@ -6,8 +6,11 @@ $(document).ready( () => {
     }, 500);
 
     $(window).scroll( () => {
-        $(".down-arrow-icon").css("opacity", 1 - $(window).scrollTop() / 250);
+        $(".down-arrow-icon").css("opacity", 1 - $(window).scrollTop() / 325);
     });
+
+    // Scroll to top on Refresh:
+
 
 
     // For Smooth Navigation...
@@ -27,7 +30,7 @@ $(document).ready( () => {
                     event.preventDefault();
                     $('html, body').animate({
                         scrollTop: target.offset().top
-                    }, 1000, function() {     // Same here...
+                    }, 500, function() {     // Same here...
                         let $target = $(target);
                         $target.focus();
                         if ($target.is(":focus")) {
@@ -40,6 +43,5 @@ $(document).ready( () => {
                 }
             }
         });
-
 
 });

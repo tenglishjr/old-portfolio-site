@@ -7,7 +7,7 @@
               content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
         <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-        <title>Timothy English | Software Developer</title>
+        <title>TJ English | Software Developer</title>
 
         <!--===== STYLE =====-->
 
@@ -24,6 +24,10 @@
 
         <!--Custom CSS-->
         <link rel="stylesheet" href="index-style.css">
+
+
+        <!--Prevent Browser from remembering scroll position after unload:-->
+        <script>history.scrollRestoration = "manual"</script>
     </head>
 
 
@@ -53,10 +57,10 @@
                         <a class="nav-link link-style" href="#scroll-projects"><i class="fas fa-code fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">WORK</div></a>
                         </li>
                         <li class="nav-item mx-2">
-                        <a class="nav-link link-style" href="#"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
+                        <a class="nav-link link-style" href="#scroll-resume"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline" id="dl-resume">Download Resume</div></a>
                         </li>
                         <li class="nav-item mx-2">
-                        <a class="nav-link link-style" href="#"><i class="far fa-file fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline" id="dl-resume">Download Resume</div></a>
+                        <a class="nav-link link-style" href="#scroll-contact"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
                         </li>
                     </ul>
                 </div>
@@ -65,8 +69,8 @@
 
             <main class="col py-3 px-0 main-wrapper" id="main-content">
                 <section class="smooth-transition" id="top-section">
-                    <div class="name-header text-center" id="name-header">Timothy English</div>
-                    <div class="job-title text-center pl-5" id="job-title">
+                    <div class="name-header text-center" id="name-header">TJ ENGLISH</div>
+                    <div class="job-title text-center pr-4" id="job-title">
                         <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
                         <span>SOFTWARE DEVELOPER</span>
                     </div>
@@ -75,30 +79,91 @@
 
                 <section id="scroll-about"></section>
 
-                <section class="mt-5 smooth-transition" id="about-section">
+
+
+                <section class="mt-5 pt-5 smooth-transition" id="about-section">
 
                     <div class="section-title text-center">
                         <span class="about-title">About Me <i class="fas fa-angle-double-left fa-md"></i></span>
                     </div>
-                    <div class="about-content mt-4 d-flex justify-content-center">
+                    <div class="about-content mt-5 d-flex justify-content-center">
                         <div class="brackets-around-head mr-3"> { </div>
-                        <img id="headshot" src="./img/tj-headshot.jpg" alt="Card image cap">
+                        <img id="headshot" src="./img/TJ-Crop.png" alt="Card image cap">
                         <div class="brackets-around-head ml-3"> } </div>
                     </div>
                     <div class="about-body p-5">
                         <p><span class="welcome">Hello!</span> Test one two three, and also four!</p>
                         <p><br>The rest of my summary will go here, eventually.</p>
                     </div>
+                    <div id="scroll-projects"></div>
 
                 </section>
 
-                <section id="scroll-projects"></section>
+
 
                 <section class="mt-5 smooth-transition" id="projects-section">
-
                     <div class="section-title text-center"><span class="projects-title pr-4"><i class="fas fa-angle-double-right fa-md mr-2"></i>Projects</span></div>
 
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#"><img class="card-img-top project-img" src="./img/Simon-photo.jpg" alt="Simple Simon image"></a>
+                            <div class="card-header text-center">
+                                <span class="other-card-title">Simple Simon</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#"><img class="card-img-top project-img" src="./img/clouds.jpg" alt="Simple Simon image"></a>
+                            <div class="card-header text-center">
+                                <span class="other-card-title">Google Weather API</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scroll-resume"></div>
                 </section>
+
+
+
+                <section class="smooth-transition pt-5" id="resume-section">
+                    <div class="section-title text-center">
+                        <span class="resume-title">Resume <i class="fas fa-angle-double-left fa-md"></i></span>
+                    </div>
+                    <div class="resume-body p-5">
+                        <span>You can download my complete resume here: </span>
+                    </div>
+                    <div class="resume-pdf-div d-flex justify-content-center align-items-center">
+                        <a href="" class="resume-pdf"><i class="far fa-file fa-4x"></i></a>
+                    </div>
+                    <div class="resume-body p-5">
+                        <span>If you would rather get ahold of me...</span>
+                    </div>
+
+                    <div id="scroll-contact"></div>
+                </section>
+
+
+
+                <section class="smooth-transition pt-5" id="contact-section">
+
+                    <div class="section-title text-center">
+                        <span class="contact-title"><i class="fas fa-angle-double-right fa-md"></i> Contact Me</span>
+                    </div>
+
+                    <div class="contact-body p-5">
+                        <span></span>
+                    </div>
+
+                </section>
+
+
             </main>
 
         </div>
