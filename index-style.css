@@ -7,7 +7,7 @@
     --light-gray-opacity: rgba(41,41,41,0.8);
 }
 
-html {
+body {
     background: #ffffff url('./img/Geometricbackground.png') no-repeat center center fixed;
     -webkit-background-size: cover;
     -o-background-size: cover;
