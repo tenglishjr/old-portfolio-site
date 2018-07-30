@@ -9,11 +9,10 @@
 
 body {
     background-image: url('./img/Geometricbackground-2.png');
-    -webkit-background-size: cover;
-    -o-background-size: cover;
-    -moz-background-size: cover;
     background-size: cover;
     background-attachment: fixed;
+    max-width: 100%;
+    height: auto;
 }
 
 body, html {
