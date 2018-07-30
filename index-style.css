@@ -7,14 +7,6 @@
     --light-gray-opacity: rgba(41,41,41,0.8);
 }
 
-body {
-    background-image: url('./img/Geometricbackground-2.png');
-    background-size: cover;
-    background-attachment: fixed;
-    max-width: 100%;
-    height: auto;
-}
-
 body, html {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
@@ -278,6 +270,9 @@ main#main-content.col.py-3.px-0 {
     position: absolute;
     visibility: visible;
     top: 88px;
+    background-image: url('./img/Geometricbackground-2.png');
+    background-size: cover;
+    background-attachment: fixed;
 }
 
 /*TOP SECTION*/
