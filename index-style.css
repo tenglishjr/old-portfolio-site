@@ -282,6 +282,7 @@ main#main-content.col.py-3.px-0 {
 
 /*TOP SECTION*/
 #top-section {
+    height: 100vh;
     background: transparent;
     opacity: 0;
     -webkit-transition: opacity 2.5s ease-in;
