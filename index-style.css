@@ -7,6 +7,12 @@
     --light-gray-opacity: rgba(41,41,41,0.8);
 }
 
+body {
+    background: url("./img/Geometricbackground-2.png")no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
 body, html {
     font-family: 'Open Sans', Helvetica, sans-serif;
 }
@@ -78,13 +84,10 @@ a.nav-link.link-style i {
 
 /*=-=-=-=-=-=-=- MAIN CONTENT =-=-=-=-=-=-=-=*/
 
-.col.py-3.px-0.main-wrapper {
-    perspective: 2px;
-}
-
 .name-header,
 .job-title {
     color: var(--main-gray);
+    background: transparent;
 }
 
 .name-header {
@@ -260,19 +263,13 @@ a.nav-link.link-style i {
 
 /*=-=-=-=-=-=-=-= NAVBAR IDs -=-=-=-=-=-=-=-=*/
 
-#dl-resume {
-    display: none;
-}
+
 
 /*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
 
 main#main-content.col.py-3.px-0 {
     position: absolute;
-    visibility: visible;
     top: 88px;
-    background-image: url('./img/Geometricbackground-2.png');
-    background-size: 464px;
-    background-attachment: fixed;
 }
 
 /*TOP SECTION*/
