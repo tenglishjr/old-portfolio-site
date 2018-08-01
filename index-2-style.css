@@ -1,0 +1,190 @@
+:root {
+    --main-blue: #77BDD9;
+    --main-gray: #292929;
+    --accent-green: rgba(163,190,0,0.62);
+    --white: #F8F9FA;
+    --light-gray: #3f3f3f;
+    --light-gray-opacity: rgba(41,41,41,0.8);
+}
+
+
+/* ```` _________ .____       _____    _________ ____________________ _________ ```` */
+/* ```` \_   ___ \|    |     /  _  \  /   _____//   _____/\_   _____//   _____/ ```` */
+/* ```` /    \  \/|    |    /  /_\  \ \_____  \ \_____  \  |    __)_ \_____  \  ```` */
+/* ```` \     \___|    |___/    |    \/        \/        \ |        \/        \ ```` */
+/* ````  \______  /_______ \____|__  /_______  /_______  //_______  /_______  / ```` */
+
+.hg__header {
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 100px auto;
+    grid-template-rows: 85px;
+    background: var(--main-gray);
+}
+.hg__main {
+    display: grid;
+    grid-area: main;
+    grid-template-columns: 100%;
+}
+
+.hg {
+    display: grid;
+    grid-template-areas: "title"
+                         "header"
+                         "main";
+    grid-template-columns: 100%;
+    margin: 0;
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+.hg:focus {
+    outline: none;
+}
+
+/*.container {*/
+    /*overflow-y: scroll;*/
+    /*-webkit-overflow-scrolling: touch;*/
+/*}*/
+
+/*.parallax-container {*/
+    /*transform-style: preserve-3d;*/
+    /*perspective: 1px;*/
+/*}*/
+
+/*.parallax {*/
+    /*background-image: url("./img/Geometricbackground-2.png");*/
+    /*background-size: cover;*/
+    /*position: -webkit-sticky;*/
+    /*top: 0;*/
+    /*transform: translate(-2px) scale(3);*/
+/*}*/
+
+/* ======= Animations ======= */
+
+/*Section Navigation*/
+.smooth-transition {
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+/*Big Down Arrow*/
+@keyframes bounceY {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(-60px);
+    }
+    40% {
+        transform: translateY(-120px);
+    }
+    60% {
+        transform: translateY(-75px);
+    }
+}
+
+
+/*HEADER*/
+
+.header-box {
+    margin: .75em;
+    justify-self: center;
+    align-self: center;
+}
+
+.links-list {
+    justify-self: right;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.links {
+    color: var(--white);
+    margin: 0 1em;
+}
+
+.link-desc {
+    display: none;
+}
+
+/*MAIN*/
+
+.main-box {
+    justify-self: center;
+    align-self: center;
+    background: transparent;
+    color: var(--main-gray);
+    display: grid;
+    grid-template-rows: 45vh 4vh 45vh;
+}
+
+.main-box #name-header,
+.main-box .job-title {
+    align-self: end;
+}
+
+.job-title .fa-angle-double-right {
+    color: var(--main-blue);
+}
+
+.down-arrow-div {
+    justify-self: center;
+    align-self: end;
+}
+
+.down-arrow-div i {
+    animation: bounceY 2s infinite;
+}
+
+
+/*ABOUT*/
+
+.about-box {
+    background: var(--main-gray);
+    color: var(--white);
+}
+
+/* ``````````````````````` .___  ________    /\   _________ ``````````````````````` */
+/* ``````````````````````` |   | \______ \   )/  /   _____/ ``````````````````````` */
+/* ``````````````````````` |   |  |    |  \      \_____  \  ``````````````````````` */
+/* ``````````````````````` |   |  |    `   \     /        \ ``````````````````````` */
+/* ``````````````````````` |___| /_______  /    /_______  / ``````````````````````` */
+/* ```````````````````````               \/             \/  ``````````````````````` */
+
+/*HEADER*/
+
+#logo-wo-words {
+    width: 60px;
+    height: 46px;
+}
+
+/*MAIN*/
+
+/*Top Section*/
+
+#name-header {
+    font-weight: 300;
+    letter-spacing: 9px;
+    font-size: 40px;
+    justify-self: center;
+}
+
+#job-title {
+    font-size: 12px;
+    letter-spacing: 5px;
+    justify-self: center;
+}
+
+
+/* ````````   \   |          |_)         _ \                 _) `````````````````` */
+/* ````````  | \/ |  _ \  _` | |  _` |  |   | |   |  _ \  __| |  _ \  __| ```````` */
+/* ````````  |    |  __/ (   | | (   |  |   | |   |  __/ |    |  __/\__ \ ```````` */
+/* ```````` _|   _|\___|\__,_|_|\__,_| \__\_\\__,_|\___|_|   _|\___|____/ ```````` */
+
+@media screen and (min-width: 576px) {
+
+    .hg {
+        grid-template-areas: "header main";
+        grid-template-columns: 100px auto;
+    }
+
+}
