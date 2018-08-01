@@ -20,17 +20,22 @@
     grid-template-columns: 100px auto;
     grid-template-rows: 85px;
     background: var(--main-gray);
+    position: sticky;
+    top: 0;
 }
 .hg__main {
     display: grid;
     grid-area: main;
     grid-template-columns: 100%;
+    background: url("./img/Geometricbackground-2.png") no-repeat center center fixed;
+    background-size: cover;
+    position: sticky;
+
 }
 
 .hg {
     display: grid;
-    grid-template-areas: "title"
-                         "header"
+    grid-template-areas: "header"
                          "main";
     grid-template-columns: 100%;
     margin: 0;
@@ -82,6 +87,36 @@
     }
 }
 
+/*For section arrows pointing to the left:*/
+@keyframes bounceXleft {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(8px);
+    }
+    60% {
+        transform: translateX(3px);
+    }
+}
+/*For section arrows pointing to the right*/
+@keyframes bounceXright {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-8px);
+    }
+    60% {
+        transform: translateX(-3px);
+    }
+}
+.section-title .fa-angle-double-left {
+    animation: bounceXleft 3s infinite;
+}
+.section-title .fa-angle-double-right {
+    animation: bounceXright 3s infinite;
+}
 
 /*HEADER*/
 
@@ -135,13 +170,65 @@
     animation: bounceY 2s infinite;
 }
 
+.section-title {
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 36px;
+}
+
+.section-title i {
+    color: var(--accent-green);
+}
+
 
 /*ABOUT*/
 
 .about-box {
-    background: var(--main-gray);
+    background: var(--light-gray-opacity);
     color: var(--white);
+    display: grid;
+    grid-template-rows: 15vh 25vh 65vh;
 }
+
+.about-subsection {
+    justify-self: center;
+    align-self: center;
+}
+
+.headshot-brackets {
+    align-self: center;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+}
+
+.brackets-around-head {
+    color: var(--white);
+    font-size: 96px;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    font-weight: 300;
+    padding-top: .1em;
+}
+
+.bracket-left {
+    justify-self: right;
+    margin-right: .25em;
+}
+
+.bracket-right {
+    justify-self: left;
+    margin-left: .25em;
+}
+
+.body-text {
+    align-self: start;
+}
+
+/*PROJECT*/
+
+.projects-title {
+
+}
+
 
 /* ``````````````````````` .___  ________    /\   _________ ``````````````````````` */
 /* ``````````````````````` |   | \______ \   )/  /   _____/ ``````````````````````` */
@@ -174,6 +261,14 @@
     justify-self: center;
 }
 
+/*About Section*/
+
+#headshot {
+    width: auto;
+    height: 150px;
+    border: 2px solid var(--white);
+    border-radius: 95%;
+}
 
 /* ````````   \   |          |_)         _ \                 _) `````````````````` */
 /* ````````  | \/ |  _ \  _` | |  _` |  |   | |   |  _ \  __| |  _ \  __| ```````` */
