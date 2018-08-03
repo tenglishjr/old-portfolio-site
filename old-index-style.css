@@ -1,0 +1,395 @@
+:root {
+    --main-blue: #77BDD9;
+    --main-gray: #292929;
+    --accent-green: rgba(163,190,0,0.62);
+    --white: #F8F9FA;
+    --light-gray: #3f3f3f;
+    --light-gray-opacity: rgba(41,41,41,0.8);
+}
+
+html {
+    background: url("./img/Geometricbackground-2.png")no-repeat center center fixed;
+    background-size: cover;
+    height: 100%;
+}
+
+body, html {
+    font-family: 'Open Sans', Helvetica, sans-serif;
+}
+
+img.logo-wo-words.mx-0 {
+    width: 60px;
+    height: auto;
+}
+
+.container-fluid {
+    padding: 0;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.smooth-transition {
+    -webkit-transition: all .8s ease-in-out;
+    -moz-transition: all .8s ease-in-out;
+    -o-transition: all .8s ease-in-out;
+    transition: all .8s ease-in-out;
+}
+
+/*=-=-=-=-=-=-=-=-=- NAVBAR CLASSES =-=-=-=-=-=-=-=-=-=-=*/
+
+.navbar {
+    background: var(--main-gray);
+}
+
+.nav-link.link-style.active-link {
+    color: var(--main-blue);
+}
+
+a.nav-link {
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.25s;
+    padding: 0 1rem;
+}
+
+a.nav-link.link-style {
+    text-align: center;
+}
+
+a.nav-link.link-style div {
+    /*NavBar Links Styling*/
+    color: var(--white);
+    font-weight: 300;
+    font-family: 'Oxygen', sans-serif;
+    font-size: 22px;
+    letter-spacing: 2.25px;
+}
+
+a.nav-link.link-style i {
+    text-align: center;
+    width: 100%;
+    float: left;
+}
+
+a.nav-link.link-style i {
+    color: var(--white);
+}
+
+.navbar-light .navbar-nav .nav-link:hover {
+    color: var(--light-gray);
+}
+
+
+
+/*=-=-=-=-=-=-=- MAIN CONTENT =-=-=-=-=-=-=-=*/
+
+.name-header,
+.job-title {
+    color: var(--main-gray);
+    background: transparent;
+}
+
+.name-header {
+    font-weight: 300;
+    letter-spacing: 9px;
+    font-size: 40px;
+    margin: 5em 0 .3em;
+}
+
+.job-title {
+    font-size: 12px;
+    letter-spacing: 5px;
+    margin-left: 17px;
+}
+
+.job-title .fas {
+    color: var(--main-blue);
+}
+
+.down-arrow-div {
+    text-align: center;
+    margin-top: 13em;
+}
+
+@keyframes bounceY {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateY(0);
+    }
+    40% {
+        transform: translateY(-30px);
+    }
+    60% {
+        transform: translateY(-15px);
+    }
+}
+
+.down-arrow-icon {
+    color: var(--main-gray);
+    animation: bounceY 2s infinite;
+}
+
+
+/*=-=-=-=-=-=- ABOUT Classes -=-=-=-=-=-=-=*/
+
+
+.section-title .about-title {
+    color: var(--white);
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 36px;
+}
+
+/*For section arrows pointing to the left:*/
+@keyframes bounceXleft {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(8px);
+    }
+    60% {
+        transform: translateX(3px);
+    }
+}
+/*For section arrows pointing to the right*/
+@keyframes bounceXright {
+    0%, 20%, 50%, 80%, 100% {
+        transform: translateX(0);
+    }
+    40% {
+        transform: translateX(-8px);
+    }
+    60% {
+        transform: translateX(-3px);
+    }
+}
+.section-title .fa-angle-double-left {
+    color: var(--accent-green);
+    animation: bounceXleft 3s infinite;
+}
+.section-title .fa-angle-double-right {
+    color: var(--accent-green);
+    animation: bounceXright 3s infinite;
+}
+
+
+
+.brackets-around-head {
+    color: var(--white);
+    font-size: 96px;
+    font-family: 'Oxygen', Helvetica, sans-serif;
+    font-weight: 300;
+}
+
+.about-body {
+    color: var(--white);
+    font-size: 18px;
+    font-weight: 300;
+}
+
+.welcome {
+    font-size: 32px;
+    font-weight: 400;
+}
+
+
+/*=-=-=-=-=-=- PROJECT Classes -=-=-=-=-=-=-=*/
+
+.section-title .projects-title {
+    color: var(--main-gray);
+    font-weight: 300;
+    font-size: 36px;
+    letter-spacing: 4px;
+}
+
+.other-card-title {
+    font-size: 22px;
+    font-weight: 400;
+    letter-spacing: 2px;
+}
+
+.card-img-top.project-img {
+    height: 142px;
+    -o-transition:.5s;
+    -moz-transition:.5s;
+    -webkit-transition:.5s;
+    transition:.25s;
+}
+
+.card-img-top.project-img:hover {
+    opacity: .75;
+}
+
+/*=-=-=-=-=-=- RESUME Classes -=-=-=-=-=-=-=*/
+
+.section-title .resume-title {
+    color: var(--white);
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 36px;
+}
+
+.resume-body {
+    color: var(--white);
+    font-size: 22px;
+    font-weight: 300;
+}
+
+.resume-pdf-div {
+    height: 225px;
+}
+
+.resume-pdf {
+    color: var(--white);
+}
+
+
+/*=-=-=-=-=-=- CONTACT Classes -=-=-=-=-=-=-=*/
+
+.section-title .contact-title {
+    color: var(--main-gray);
+    font-weight: 300;
+    letter-spacing: 4px;
+    font-size: 36px;
+}
+
+
+/*```````````````````````-----```----```/```/----```````````````````````*/
+/*`````````````````````````|`````|```|``````\---\```````````````````````*/
+/*```````````````````````-----```----```````----/```````````````````````*/
+
+
+
+/*=-=-=-=-=-=-=-= NAVBAR IDs -=-=-=-=-=-=-=-=*/
+
+
+
+/*=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=-=*/
+
+main#main-content.col.py-3.px-0 {
+    position: absolute;
+    top: 88px;
+}
+
+/*TOP SECTION*/
+#top-section {
+    height: 100vh;
+    background: transparent;
+    opacity: 0;
+    -webkit-transition: opacity 2.5s ease-in;
+    -moz-transition: opacity 2.5s ease-in;
+    -o-transition: opacity 2.5s ease-in;
+    transition: opacity 2.5s ease-in;
+}
+
+#top-section.load {
+    opacity: 1;
+}
+
+/*=-=-=-=-=-=-=-=-ABOUT IDs=-=-=-=-=-=-=-*/
+
+#scroll-about {
+    background: transparent;
+    height: 37px;
+}
+
+#about-section {
+    height: 100vh;
+    background: var(--light-gray-opacity);
+    position: relative;
+}
+
+#headshot {
+    width: auto;
+    height: 150px;
+    border: 2px solid var(--white);
+    border-radius: 95%;
+}
+
+/*=-=-=-=-=-=-=-PROJECTS IDs =-=-=-=-=-=-*/
+
+#scroll-projects {
+    background: transparent;
+    position: absolute;
+    bottom: 75px;
+    height: 10px;
+}
+
+#projects-section {
+    background: transparent;
+    position: relative;
+    height: 120vh;
+}
+
+/*=-=-=-=-=-=-= RESUME IDs =-=-=-=-=-=-=*/
+
+#scroll-resume {
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    height: 87px;
+}
+
+#resume-section {
+    position: relative;
+    height: 90vh;
+    background: var(--light-gray-opacity);
+}
+
+
+/*=-=-=-=-=-=-= CONTACT IDs =-=-=-=-=-=-=*/
+
+#scroll-contact {
+    background: transparent;
+    position: absolute;
+    bottom: 0;
+    height: 87px;
+}
+
+#contact-section {
+    height: 150vh;
+    background: transparent;
+}
+
+
+/*========== MEDIA QUERIES ===========*/
+
+
+/*Small devices/Landscape phones*/
+@media screen and (min-width: 576px) {
+
+    img.logo-wo-words.mx-0 {
+        width: 120px;
+    }
+
+}
+
+/*Tablets, etc*/
+@media screen and (min-width: 768px) {
+
+    ul.flex-sm-column.flex-row.navbar-nav.justify-content-between.navlinks {
+        margin-top: 2em;
+    }
+
+    img.logo-wo-words.mx-0 {
+        width: 120px;
+    }
+
+    .logo-name {
+        display: inline-block;
+    }
+
+}
+
+
+/*Desktop computers, larger devices*/
+@media screen and (min-width: 992px) {
+
+}
+
+
+/*Large Desktops, extra large devices*/
+@media screen and (min-width: 1200px) {
+
+}

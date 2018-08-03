@@ -1,0 +1,154 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <!--===== Meta =====-->
+        <meta charset="UTF-8">
+        <meta name="viewport"
+              content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+        <title>TJ English | Software Developer</title>
+
+        <!--===== STYLE =====-->
+
+        <link rel="icon" type="image/png" href="./favicon.png">
+
+        <!--FontAwesome-->
+        <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
+
+        <!--Google Fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Oxygen:300,400,700|Roboto+Mono:400,500|Open+Sans:300,400|Ubuntu:300,400" rel="stylesheet">
+
+        <!--Bootstrap-->
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+
+        <!--Custom CSS-->
+        <link rel="stylesheet" href="old-index-style.css">
+
+
+        <!--Prevent Browser from remembering scroll position after unload:-->
+        <script>history.scrollRestoration = "manual"</script>
+    </head>
+
+
+
+    <body>
+
+        <div class="container-fluid">
+
+            <div id="top"></div>
+            <!--NAVBAR-->
+            <nav class="navbar navbar-expand navbar-light fixed-top py-3">
+                <a class="navbar-brand navbar-brand" id="navbar-logo" href="./old-index.html">
+                    <img src="img/Logo%20NEW.png" class="logo-wo-words mx-0">
+                </a>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ml-auto">
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="#top"><i class="fas fa-chevron-up fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">TOP</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" id="info-link" href="#scroll-about"><i class="fas fa-info fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">ABOUT</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="#scroll-projects"><i class="fas fa-code fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">WORK</div></a>
+                        </li>
+                        <li class="nav-item mx-2">
+                        <a class="nav-link link-style" href="index.html"><i class="far fa-envelope fa-lg my-sm-3 mr-2"></i><div class="mx-0 d-none d-sm-inline">CONTACT</div></a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
+
+
+            <main class="col py-3 px-0 main-wrapper" id="main-content">
+
+                <section class="smooth-transition" id="top-section">
+
+                    <div class="name-header text-center" id="name-header">TJ ENGLISH</div>
+                    <div class="job-title text-center pr-4" id="job-title">
+                        <span><i class="fas fa-angle-double-right fa-lg pt-1"></i></span>
+                        <span>SOFTWARE DEVELOPER</span>
+                    </div>
+                    <div class="down-arrow-div"><i class="fas fa-angle-down fa-3x down-arrow-icon"></i></div>
+                </section>
+
+                <section id="scroll-about"></section>
+
+                <section class="mt-5 pt-5 smooth-transition" id="about-section">
+
+                    <div class="section-title text-center">
+                        <span class="about-title">About Me <i class="fas fa-angle-double-left fa-md"></i></span>
+                    </div>
+                    <div class="about-content mt-5 d-flex justify-content-center">
+                        <div class="brackets-around-head mr-3"> { </div>
+                        <img id="headshot" src="./img/TJ-Crop.png" alt="Card image cap">
+                        <div class="brackets-around-head ml-3"> } </div>
+                    </div>
+                    <div class="about-body p-5">
+                        <p><span class="welcome">Hello!</span> Test one two three, and also four!</p>
+                        <p><br>The rest of my summary will go here, eventually.</p>
+                    </div>
+                    <div id="scroll-projects"></div>
+
+                </section>
+
+
+
+                <section class="mt-5 smooth-transition" id="projects-section">
+                    <div class="section-title text-center"><span class="projects-title pr-4"><i class="fas fa-angle-double-right fa-md mr-2"></i>Projects</span></div>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#"><img class="card-img-top project-img" src="./img/Simon-photo.jpg" alt="Simple Simon image"></a>
+                            <div class="card-header text-center">
+                                <span class="other-card-title">Simple Simon</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="d-flex justify-content-center mt-5">
+                        <div class="card" style="width: 18rem;">
+                            <a href="#"><img class="card-img-top project-img" src="./img/clouds.jpg" alt="Simple Simon image"></a>
+                            <div class="card-header text-center">
+                                <span class="other-card-title">Google Weather API</span>
+                            </div>
+                            <div class="card-body">
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="scroll-resume"></div>
+                </section>
+
+                <section class="smooth-transition pt-5" id="contact-section">
+
+                    <div class="section-title text-center">
+                        <span class="contact-title"><i class="fas fa-angle-double-right fa-md"></i> Contact Me</span>
+                    </div>
+
+                    <div class="contact-body p-5">
+                        <span></span>
+                    </div>
+
+                </section>
+
+
+            </main>
+
+        </div>
+
+        <!--===== JS =====-->
+
+        <!--Bootstrap Scripts-->
+        <script src="https://code.jquery.com/jquery-3.3.1.js" integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+
+        <!--Custom JS-->
+        <script src="./js/index.js"></script>
+    </body>
+</html>
