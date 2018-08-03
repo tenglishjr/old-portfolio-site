@@ -25,7 +25,11 @@ body {
     grid-template-rows: 85px;
     background: var(--main-gray);
     position: sticky;
+    position: -webkit-sticky;
+    position: -ms-device-fixed;
+    transform-origin: bottom right;
     top: 0;
+    right: 0;
 }
 .hg__main {
     display: grid;
@@ -286,6 +290,7 @@ body {
     align-items: center;
     color: var(--main-gray);
     font-size: 24px;
+    font-family: "Roboto Mono", Helvetica, sans-serif;
     transition: opacity .2s, visibility .2s;
     visibility: visible;
     opacity: 1;
@@ -315,16 +320,21 @@ body {
     background-size: cover;
     color: var(--white);
     display: grid;
-    grid-template-rows: 25vh 140vh 6vh;
+    grid-template-rows: 25vh 48vh 27vh;
     z-index: -1;
 }
 
 .contact-form {
     align-self: center;
+    display: grid;
+    grid-template-columns: 80%;
+    grid-template-rows: 11vh 22vh 0;
+    justify-content: center;
+    grid-gap: 1em;
 }
 
-.required {
-    color: var(--accent-green);
+.contact-sub-box {
+    justify-self: center;
 }
 
 .subsection.social-icons-div {
@@ -394,6 +404,13 @@ body {
 
 #movie-list-img {
     background-image: url("./img/close-up-filmstrip-negatives-133070.jpg");
+}
+
+/*Contact Section*/
+
+#goog-icon {
+    width: 150px;
+    height: auto;
 }
 
 /* ````````   \   |          |_)         _ \                 _) `````````````````` */
