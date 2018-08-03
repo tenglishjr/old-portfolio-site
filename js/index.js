@@ -5,6 +5,10 @@ $(document).ready( () => {
         $('#top-section').addClass('load');
     }, 500);
 
+    setTimeout (() => {
+        $(".down-arrow-div").fadeIn(2000);
+    }, 2500);
+
     $(window).scroll( () => {
         $(".down-arrow-icon").css("opacity", 1 - $(window).scrollTop() / 450);
     });
@@ -43,5 +47,5 @@ $(document).ready( () => {
                 }
             }
         });
-    
+
 });

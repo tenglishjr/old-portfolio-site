@@ -80,13 +80,13 @@ body {
 /*Big Down Arrow*/
 @keyframes bounceY {
     0%, 20%, 50%, 80%, 100% {
-        transform: translateY(-65px);
+        transform: translateY(-175px);
     }
     40% {
-        transform: translateY(-125px);
+        transform: translateY(-215px);
     }
     60% {
-        transform: translateY(-95px);
+        transform: translateY(-195px);
     }
 }
 
@@ -132,7 +132,7 @@ body {
 .links-list {
     justify-self: right;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
 }
 
 .links {
@@ -168,6 +168,7 @@ body {
 }
 
 .down-arrow-div {
+    display: none;
     justify-self: center;
     align-self: end;
 }
