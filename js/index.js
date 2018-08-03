@@ -6,7 +6,7 @@ $(document).ready( () => {
     }, 500);
 
     $(window).scroll( () => {
-        $(".down-arrow-icon").css("opacity", 1 - $(window).scrollTop() / 325);
+        $(".down-arrow-icon").css("opacity", 1 - $(window).scrollTop() / 450);
     });
 
     // Scroll to top on Refresh:
@@ -43,5 +43,5 @@ $(document).ready( () => {
                 }
             }
         });
-
+    
 });
