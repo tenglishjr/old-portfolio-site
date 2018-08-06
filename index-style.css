@@ -252,9 +252,9 @@ body {
 .project-box {
     /*noinspection CssInvalidFunction*/
     background: linear-gradient(
-                rgb(255, 255, 255, 0.7),
-                rgb(255, 255, 255, 0.7)),
-                url("./img/code-2858768_1280.png");
+                rgb(255, 255, 255, 0.85),
+                rgb(255, 255, 255, 0.85)),
+                url("./img/abstract-background-canvas-249798.jpg");
     background-size: cover;
     color: var(--main-gray);
     display: grid;
@@ -316,7 +316,7 @@ body {
     background: linear-gradient(
             rgba(41,41,41,0.95),
             rgba(33,71,89,0.95)),
-    url("./img/programming-1857236_1920.jpg");
+    url("./img/code-2858768_1280.png");
     background-size: cover;
     color: var(--white);
     display: grid;
