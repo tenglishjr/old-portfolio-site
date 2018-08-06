@@ -252,8 +252,8 @@ body {
 .project-box {
     /*noinspection CssInvalidFunction*/
     background: linear-gradient(
-                rgb(255, 255, 255, 0.8),
-                rgb(255, 255, 255, 0.8)),
+                rgb(255, 255, 255, 0.7),
+                rgb(255, 255, 255, 0.7)),
                 url("./img/code-2858768_1280.png");
     background-size: cover;
     color: var(--main-gray);
@@ -335,6 +335,7 @@ body {
 
 .contact-sub-box {
     justify-self: center;
+    font-size: 20px;
 }
 
 .subsection.social-icons-div {
