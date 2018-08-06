@@ -321,7 +321,6 @@ body {
     color: var(--white);
     display: grid;
     grid-template-rows: 25vh 48vh 27vh;
-    z-index: -1;
 }
 
 .contact-form {
