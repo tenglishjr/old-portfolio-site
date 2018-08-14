@@ -28,6 +28,7 @@ body {
     position: -webkit-sticky;
     position: -ms-device-fixed;
     transform-origin: bottom right;
+    z-index: 999;
     top: 0;
 }
 .hg__main {
@@ -212,7 +213,7 @@ body {
     background-size: cover;
     color: var(--white);
     display: grid;
-    grid-template-rows: 25vh 30vh 65vh;
+    grid-template-rows: 25vh 30vh 75vh;
     z-index: -1;
 }
 
@@ -268,15 +269,15 @@ body {
     background-size: cover;
     color: var(--main-gray);
     display: grid;
-    grid-template-rows: 25vh 35vh 35vh 35vh 15vh;
-    z-index: -1;
+    grid-template-rows: 25vh 35vh 25vh 35vh 15vh;
+    /*z-index: 1;*/
 }
 
 .img-wrap {
     position: relative;
     display: grid;
-    grid-template-columns: 257px;
-    grid-template-rows: 200px;
+    grid-template-columns: 216px;
+    grid-template-rows: 162px;
     justify-self: center;
     align-self: center;
     z-index: 399;
@@ -294,33 +295,28 @@ body {
     display: grid;
     position: absolute;
     top: 0;
-    bottom: 0;
     left: 0;
+    bottom: 0;
     right: 0;
     margin: 0;
-    z-index: 999;
+    z-index: 991;
     justify-items: center;
     align-items: center;
     color: var(--main-gray);
-    font-size: 24px;
+    font-size: 18px;
+    text-decoration: none;
     font-family: "Roboto Mono", Helvetica, sans-serif;
     transition: opacity .2s, visibility .2s;
-    visibility: visible;
-    opacity: 1;
     border-radius: 30px;
     border: solid var(--main-gray) 1px;
 }
 
 .desc-span {
+    z-index: 992;
     background: rgba(255, 255, 255, 0.75);
     width: 100%;
     line-height: 48px;
     text-align: center;
-}
-
-.img-wrap:hover .img-description {
-    visibility: visible;
-    opacity: 1;
 }
 
 /*CONTACT*/

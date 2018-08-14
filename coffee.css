@@ -1,3 +1,7 @@
+html, body {
+    height: 100%;
+}
+
 body {
 
     background-image: url("img/abstract-antique-background-172276.jpg");
@@ -6,6 +10,7 @@ body {
 
 .container {
     background-color: #ffffff;
+    height: 100%;
 }
 
 .main-title {

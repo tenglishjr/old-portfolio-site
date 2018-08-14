@@ -25,9 +25,10 @@
 
             <!--Body-->
             <div class="row mt-5">
+                <div class="col-12 col-lg-6 row">
 
                 <!--Search Coffees form-->
-                <div class="col-12 col-md-6">
+                    <div class="col-6">
                     <form class="mb-5">
                         <h2 class="add-coffee-head"><u>Search Coffee</u></h2>
 
@@ -45,9 +46,11 @@
                         <input id="submit" class="btn btn-primary btn-md btn-block" type="submit">
                         </div>
                     </form>
+                    </div>
                     <hr id="hr-main">
 
-                    <form class="mt-5">
+                    <div class="col-6">
+                    <form>
 
 
                     <!--Add Coffee form-->
@@ -63,13 +66,13 @@
                         <input type="text" class="input-group mb-3"  id="name-add">
                         <input id="user-submit" class="btn btn-primary btn-md btn-block"  type="submit" />
                     </form>
-
+                    </div>
                 </div>
 
                 <!--Coffee Div Populated by coffees[] in JS-->
-                <div class="col-12 col-md-6">
+                <div class="col-12">
                     <div class="coffee-list row">
-                        <ul class="pl-0 mr-0" id="coffees"></ul>
+                        <ul class="pl-0 mr-0 col-12" id="coffees"></ul>
                     </div>
                 </div>
 
