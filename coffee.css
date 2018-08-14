@@ -1,0 +1,70 @@
+body {
+
+    background-image: url("img/abstract-antique-background-172276.jpg");
+    background-size: auto;
+}
+
+.container {
+    background-color: #ffffff;
+}
+
+.main-title {
+    font-family: 'Sigmar One', sans-serif;
+    font-size: 80px;
+}
+
+form h2,
+.labels {
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.btn {
+    background-image: url("img/abstract-antique-background-172276.jpg");
+    background-size: cover;
+}
+#checkout {
+    background-image: none;
+    background-color: blue !important;
+}
+
+.coffee-list li {
+    list-style: none;
+    display: inline-block;
+    width: 50%;
+}
+
+.coffee-card h3,
+.coffee-card p {
+    display: inline-block;
+}
+
+.coffee-card h3 {
+    font-family: 'Titan One', sans-serif;
+    font-size: 24px;
+}
+
+.coffee-card p {
+    color: #A9A4A4;
+    font-family: 'Encode Sans Condensed', sans-serif;
+}
+
+.hr-main {
+height: 12px;
+border: 0;
+    box-shadow: inset 0 12px 12px -12px rgba(0,0,0,0.5);
+
+}
+
+.add-coffee-head {
+    margin-bottom: 20px;
+    padding-top: 0px;
+}
+
+.card-footer {
+    font-weight: 700;
+}
+
+.construction-img {
+    background-image: url("img/Under_construction_image.jpg");
+    background-size: cover;
+}

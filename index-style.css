@@ -29,7 +29,6 @@ body {
     position: -ms-device-fixed;
     transform-origin: bottom right;
     top: 0;
-    right: 0;
 }
 .hg__main {
     display: grid;
@@ -157,7 +156,10 @@ body {
     color: var(--main-gray);
     display: grid;
     grid-template-rows: 45vh 4vh 45vh;
-    background: url("./img/Geometricbackground-2.png");
+    background: linear-gradient(
+                    rgba(255, 255, 255, 0.7),
+                    rgba(255, 255, 255, 0.7)),
+                    url("./img/Geometricbackground-2.png");
     background-size: cover;
     width: 100%;
 }
@@ -179,6 +181,7 @@ body {
 
 .down-arrow-icon {
     animation: bounceY 2s infinite;
+    color: var(--main-gray);
 }
 
 .section-title {
@@ -190,6 +193,7 @@ body {
 .section-title i {
     color: var(--accent-green);
     padding-top: 2em;
+    font-size: 56px;
 }
 
 .subsection {
@@ -236,16 +240,22 @@ body {
     margin-left: .25em;
 }
 
-.sub-header {
-    font-size: 28px;
-    font-weight: 300;
-    margin-bottom: 0;
-    letter-spacing: 4px;
-}
-
 .body-text {
     align-self: start;
 }
+
+.sub-header {
+    font-size: 28px;
+    font-weight: 300;
+    margin: .5em 1em;
+    letter-spacing: 4px;
+}
+
+.info-para {
+    margin: 0 2em;
+    font-size: 18px;
+}
+
 
 /*PROJECT*/
 
@@ -269,6 +279,7 @@ body {
     grid-template-rows: 200px;
     justify-self: center;
     align-self: center;
+    z-index: 399;
 }
 
 .img-img {
@@ -276,6 +287,7 @@ body {
     background-size: cover;
     border-radius: 30px;
     border: solid #000 1px;
+    z-index: 499;
 }
 
 .img-description {
@@ -286,6 +298,7 @@ body {
     left: 0;
     right: 0;
     margin: 0;
+    z-index: 999;
     justify-items: center;
     align-items: center;
     color: var(--main-gray);
@@ -384,12 +397,14 @@ body {
     letter-spacing: 9px;
     font-size: 40px;
     justify-self: center;
+    display: none;
 }
 
 #job-title {
     font-size: 12px;
     letter-spacing: 5px;
     justify-self: center;
+    display: none;
 }
 
 /*About Section*/
@@ -403,8 +418,12 @@ body {
 
 /*Projects Section*/
 
-#simon-img {
-    background-image: url("./img/Simon-photo.jpg");
+#coffee-img {
+    background-image: url("./img/beans-brown-coffee-34085.jpg");
+}
+
+#contacts-img {
+    background-image: url("./img/address-book-black-and-white-business-205414.jpg");
 }
 
 #movie-list-img {
@@ -426,15 +445,111 @@ body {
 /*Tablets*/
 @media screen and (min-width: 425px) {
 
+    .hg__header {
+        grid-template-rows: 125px;
+    }
+
     .hg {
-        grid-template-areas: "header main";
-        grid-template-columns: 100px auto;
+        grid-template-rows: 125px 1fr;
+    }
+
+    .section-title {
+        font-size: 42px;
+        font-weight: 300;
+    }
+
+    /*======== NAV ========*/
+
+    .header-box {
+        margin: 1.5em;
+    }
+
+    .links .fa-lg {
+        font-size: 32px;
+    }
+
+    /*======== TOP ========*/
+
+    .main-box {
+        background: linear-gradient(
+                rgb(255, 255, 255, 0.9),
+                rgb(255, 255, 255, 0.9)),
+        url("./img/code-2858768_1280.png");
+        -webkit-background-size: contain;
+        background-size: contain;
+    }
+
+    .fa-3x {
+        font-size: 72px;
+    }
+
+    /*======== ABOUT ========*/
+
+    .about-box {
+        grid-template-rows: 25vh 38vh 65vh;
+    }
+
+    .body-text {
+        display: grid;
+        grid-template-columns: 600px;
+    }
+
+    .sub-header {
+
+    }
+
+    .brackets-around-head {
+        font-size: 186px;
+    }
+
+    .section-title {
+        font-size: 52px;
+    }
+
+    /*======== CONTACT ========*/
+    .contact-box {
+        background: linear-gradient(
+                rgba(41, 41, 41, 0.85),
+                rgba(33, 71, 89, 0.85)),
+        url("./img/Geometricbackground-2.png");
+    }
+
+    /*======-----=====-----\ ====/===/---\=======*/
+    /*========|=======|    |=========\___,=======*/
+    /*======-----=====|____/=========,___/=======*/
+
+    #logo-wo-words {
+        width: 90px;
+        height: 69px;
+        margin-left: 2em;
+    }
+
+    #name-header {
+        font-size: 56px;
+    }
+
+    #job-title {
+        font-size: 18px;
+    }
+
+    #job-title span i {
+        font-size: 32px;
+    }
+
+    #headshot {
+        height: 275px;
     }
 
 }
 
 /*Small Laptops*/
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 769px) {
+
+    .hg {
+        grid-template-areas: "header main";
+        grid-template-columns: 100px auto;
+        grid-template-rows: repeat(2, 100%);
+    }
 
     .img-description {
         transition: opacity .2s, visibility .2s;

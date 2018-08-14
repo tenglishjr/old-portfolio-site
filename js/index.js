@@ -2,8 +2,9 @@ $(document).ready( () => {
     'use strict';
 
     setTimeout(() => {
-        $('#top-section').addClass('load');
-    }, 500);
+        $('#name-header').fadeIn(1000);
+        $('#job-title').fadeIn(1000);
+    }, 1000);
 
     setTimeout (() => {
         $(".down-arrow-div").fadeIn(2000);
@@ -12,9 +13,6 @@ $(document).ready( () => {
     $(window).scroll( () => {
         $(".down-arrow-icon").css("opacity", 1 - $(window).scrollTop() / 450);
     });
-
-    // Scroll to top on Refresh:
-
 
 
     // For Smooth Navigation...
