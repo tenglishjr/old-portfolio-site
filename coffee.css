@@ -15,7 +15,7 @@ body {
 
 .main-title {
     font-family: 'Sigmar One', sans-serif;
-    font-size: 80px;
+    font-size: 56px;
 }
 
 form h2,
@@ -24,9 +24,20 @@ form h2,
 }
 
 .btn {
-    background-image: url("img/abstract-antique-background-172276.jpg");
-    background-size: cover;
+    background: white;
+    color: #898989;
+    font-weight: 600;
+    border: 2px #898989 solid;
+    transition: all 0.3s ease 0s;
 }
+
+.btn:hover {
+    background: url("./img/abstract-antique-background-172276.jpg");
+    font-weight: 500;
+    letter-spacing: 3px;
+
+}
+
 #checkout {
     background-image: none;
     background-color: blue !important;

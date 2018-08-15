@@ -213,7 +213,7 @@ body {
     background-size: cover;
     color: var(--white);
     display: grid;
-    grid-template-rows: 25vh 30vh 75vh;
+    grid-template-rows: 25vh 30vh 80vh;
     z-index: -1;
 }
 
