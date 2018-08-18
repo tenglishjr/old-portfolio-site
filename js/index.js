@@ -46,4 +46,8 @@ $(document).ready( () => {
             }
         });
 
+    // ====== STELLAR.JS ======
+    $(window).stellar();
+
+
 });

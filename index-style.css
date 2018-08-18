@@ -482,7 +482,7 @@ body {
     /*======== ABOUT ========*/
 
     .about-box {
-        grid-template-rows: 25vh 38vh 65vh;
+        grid-template-rows: 25vh 38vh 85vh;
     }
 
     .body-text {
@@ -491,7 +491,13 @@ body {
     }
 
     .sub-header {
+        font-size: 36px;
+        margin: .5em 0;
+    }
 
+    .info-para {
+        font-size: 24px;
+        letter-spacing: 2px;
     }
 
     .brackets-around-head {
