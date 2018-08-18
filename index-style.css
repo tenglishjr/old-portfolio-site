@@ -160,7 +160,7 @@ body {
     background: linear-gradient(
                     rgba(255, 255, 255, 0.7),
                     rgba(255, 255, 255, 0.7)),
-                    url("./img/Geometricbackground-2.png");
+                    url("./img/Geometricbackground-2.jpg");
     background-size: cover;
     width: 100%;
 }
@@ -261,7 +261,6 @@ body {
 /*PROJECT*/
 
 .project-box {
-    /*noinspection CssInvalidFunction*/
     background: linear-gradient(
                 rgb(255, 255, 255, 0.85),
                 rgb(255, 255, 255, 0.85)),
@@ -325,7 +324,7 @@ body {
     background: linear-gradient(
             rgba(41,41,41,0.95),
             rgba(33,71,89,0.95)),
-    url("./img/code-2858768_1280.png");
+    url("./img/code-2858768_1280.jpg");
     background-size: cover;
     color: var(--white);
     display: grid;
@@ -470,9 +469,9 @@ body {
         background: linear-gradient(
                 rgb(255, 255, 255, 0.9),
                 rgb(255, 255, 255, 0.9)),
-        url("./img/code-2858768_1280.png");
-        -webkit-background-size: contain;
-        background-size: contain;
+        url("./img/code-2858768_1280.jpg");
+        -webkit-background-size: cover;
+        background-size: cover;
     }
 
     .fa-3x {
@@ -513,7 +512,7 @@ body {
         background: linear-gradient(
                 rgba(41, 41, 41, 0.85),
                 rgba(33, 71, 89, 0.85)),
-        url("./img/Geometricbackground-2.png");
+        url("./img/Geometricbackground-2.jpg");
     }
 
     /*======-----=====-----\ ====/===/---\=======*/
@@ -545,7 +544,7 @@ body {
 }
 
 /*Small Laptops*/
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 992px) {
 
     .hg {
         grid-template-areas: "header main";
