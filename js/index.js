@@ -27,7 +27,6 @@ $(document).ready( () => {
             ) {
                 let target = $(this.hash);
                 target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
-                target.stop();
                 // Does a scroll target exist?
                 if (target.length) {
                     event.preventDefault();
@@ -40,6 +39,7 @@ $(document).ready( () => {
                             return false;
                         } else {
                             $target.attr('tabindex','-1');
+                            $target.stop();
                             $target.focus();
                         }
                     });
