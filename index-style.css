@@ -439,7 +439,7 @@ body {
 /* ```````` _|   _|\___|\__,_|_|\__,_| \__\_\\__,_|\___|_|   _|\___|____/ ```````` */
 
 /*Tablets*/
-@media screen and (min-width: 425px) {
+@media screen and (min-width: 415px) {
 
     .hg__header {
         grid-template-rows: 125px;
