@@ -142,6 +142,7 @@ body {
 .links {
     color: var(--white);
     margin: 0 1em;
+    transition: all 0.15s ease-in-out;
 }
 
 .link-desc {
