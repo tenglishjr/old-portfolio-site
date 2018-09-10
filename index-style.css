@@ -245,7 +245,7 @@ footer {
     background-size: cover;
     color: var(--white);
     display: grid;
-    grid-template-rows: 23vh 9vh 1fr;
+    grid-template-rows: 23vh 9vh 110vh;
     z-index: -1;
 }
 
@@ -488,7 +488,7 @@ footer {
     width: auto;
     height: 150px;
     border: 2px solid var(--white);
-    border-radius: 95%;
+    border-radius: 95px;
     box-shadow: 1px 1px 12px var(--white);
 }
 
