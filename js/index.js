@@ -17,7 +17,7 @@ $(document).ready( () => {
 
     function checkPosition() {
         if (window.matchMedia('(min-width: 992px)').matches) {
-            $("a[href='#projects-section']").attr("href","#projects-carousel");
+            $("a[href='#projects-section']").attr("href","#alt-projects");
         }
     }
 
@@ -26,15 +26,9 @@ $(document).ready( () => {
         $("html, body").animate({ scrollTop: $($(this).attr("href")).offset().top }, 500);
     });
 
-    $('.carousel').slick({
-        adaptiveHeight: true,
-        arrows: true,
-        dots: true,
-        infinite: true,
-        pauseOnHover: true,
-        slide: 'div',
-        verticalScrolling: true
-    })
+    // if ($("#projects-anchor").hasClass("alternate-anchor-class")) {
+    //
+    // }
 
 
 });
