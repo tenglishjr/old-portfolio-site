@@ -66,24 +66,6 @@ footer {
     outline: none;
 }
 
-/*.container {*/
-    /*overflow-y: scroll;*/
-    /*-webkit-overflow-scrolling: touch;*/
-/*}*/
-
-/*.parallax-container {*/
-    /*transform-style: preserve-3d;*/
-    /*perspective: 1px;*/
-/*}*/
-
-/*.parallax {*/
-    /*background-image: url("./img/Geometricbackground-2.png");*/
-    /*background-size: cover;*/
-    /*position: -webkit-sticky;*/
-    /*top: 0;*/
-    /*transform: translate(-2px) scale(3);*/
-/*}*/
-
 /* ======= Animations ======= */
 
 /*Section Navigation*/
@@ -298,6 +280,22 @@ footer {
     font-size: 18px;
 }
 
+.techicons-div {
+    z-index: 4999;
+    margin: 0 2em;
+}
+
+.tech-cons img {
+    height: 40px;
+    width: auto;
+}
+
+.tech-cons {
+    display: inline-block;
+    margin: .25em;
+    z-index: 2000;
+}
+
 
 /*PROJECT*/
 
@@ -309,7 +307,7 @@ footer {
     background-size: cover;
     color: var(--main-gray);
     display: grid;
-    grid-template-rows: 23vh 9vh 95vh;
+    grid-template-rows: 23vh 9vh 135vh;
     /*z-index: 1;*/
 }
 
@@ -319,7 +317,7 @@ footer {
 
 .proj-top-row {
     display: grid;
-    grid-template-rows: 32vh 28vh 32vh;
+    grid-template-rows: 32vh 28vh 28vh 32vh;
 }
 
 .bottom-row {
@@ -386,6 +384,7 @@ footer {
 .coffee-img { background-image: url("./img/beans-brown-coffee-34085.jpg"); }
 .contacts-img { background-image: url("./img/address-book-black-and-white-business-205414.jpg"); }
 .movie-list-img { background-image: url("./img/close-up-filmstrip-negatives-133070.jpg"); }
+.badlister-img { background-image: url("./img/badlister-logo.jpg")}
 
 /*CONTACT*/
 .goog-form-embed {
@@ -516,7 +515,7 @@ footer {
     .main-box { grid-template-rows: 45vh 4vh 66vh; }
 
     /*about*/
-    .about-box { grid-template-rows: 39vh 56vh 68vh; }
+    .about-box { grid-template-rows: 39vh 16vh 138vh; }
 
     .about-body {
         grid-template-areas: "a-headshot a-body";
@@ -531,7 +530,11 @@ footer {
     }
 
     /*projects*/
-    .project-box { grid-template-rows: 39vh 62vh 40vh 62vh 2vh; }
+    .project-box { grid-template-rows: 39vh 21vh 232vh; }
+
+    .proj-top-row {
+        grid-template-rows: 60vh 65vh 40vh 63vh;
+    }
 
     .proj-sec-l {
         display: grid;
@@ -568,7 +571,7 @@ footer {
 
     /*contact*/
     .contact-box {
-        grid-template-rows: 38vh 68vh 46vh;
+        grid-template-rows: 38vh 42vh 16vh 46vh;
         background: linear-gradient(
                 rgba(41,41,41,0.90),
                 rgba(33,71,89,0.90)),
@@ -588,13 +591,17 @@ footer {
         font-size: 20px;
     }
     
-    .social-icons { grid-gap: 48px; }
+    .social-icons {
+        padding-top: 5px;
+        text-align: right;
+    }
 
-    .social-icons-img { width: 48px; }
+    .social-icons-img { width: 38px; }
 
     #goog-icon { width: 124px; }
 
 }
+
 /*Tablets*/
 @media screen and (min-width: 767px) {
 
@@ -639,7 +646,7 @@ footer {
     /*======== ABOUT ========*/
 
     .about-box {
-        grid-template-rows: 25vh 9vh 38vh 65vh;
+        grid-template-rows: 25vh 9vh 38vh 75vh;
     }
 
     .body-text {
@@ -665,14 +672,18 @@ footer {
         font-size: 52px;
     }
 
+    .tech-cons img {
+        height: 50px;
+    }
+
     /*======== PROJECTS =======*/
 
     .project-box {
-        grid-template-rows: 25vh 9vh 80vh;
+        grid-template-rows: 25vh 9vh 115vh;
     }
 
     .proj-top-row {
-        grid-template-rows: 16vh 24vh 16vh;
+        grid-template-rows: 25vh 30vh 25vh 30vh;
     }
 
     .proj-sec { margin: 0 4em;
@@ -789,13 +800,17 @@ footer {
         width: 40%;
     }
 
-    .alternate-link-class {}
+    .shows-on-desktop {
+        display: inline-block;
+        z-index: 1000;
+    }
 
     /*header*/
     .hg__header {
         grid-template-columns: 100%;
         grid-template-rows: 60px;
         position: sticky;
+        z-index: 3000;
     }
 
     .header-box {
@@ -880,17 +895,19 @@ footer {
     /*about*/
     .about-box {
         grid-template-rows: 22vh 6vh 50vh 28vh;
+        z-index: 1000;
     }
 
     .about-body {
         grid-template-areas: "a-body a-headshot";
-        /*grid-template-columns: 325px;*/
         grid-template-rows: 60vh 70vh;
         margin: 3em 2em;
+        z-index: 1000;
     }
 
     .body-text {
         margin-left: 4em;
+        z-index: 1000;
     }
 
     .sub-header {
@@ -914,6 +931,8 @@ footer {
     }
 
     /*projects*/
+
+
     /*.project-box {*/
         /*grid-template-areas: "proj-title" "proj-hr";*/
         /*grid-template-rows: 22vh 9vh 69vh;*/
@@ -1160,5 +1179,6 @@ footer {
     #movie-lister-img { background-image: url("img/close-up-filmstrip-negatives-133070.jpg"); }
     #coffee-lister-img { background-image: url("img/beans-brown-coffee-34085.jpg"); }
     #contacts-img { background-image: url("img/address-book-black-and-white-business-205414.jpg"); }
+    #badlister-bgimg { background-image: url("img/badlister-alt.jpg")}
 
 }
